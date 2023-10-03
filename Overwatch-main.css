@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color:#081b29;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    border: var(--main-color);
+}
+
+header {
+    background: var(--main-color);
+    border-bottom: #fff 2.5px solid;
+    position: fixed;
+    top: 0; left: 0; right: 0; 
+    padding: 2px 2%;
+    align-items: center;
+    display: flex;
+    z-index: 1000;
+
+}
+
+.logo {
+    color: #fff;
+    font-size: 100%;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+.icon img {
+    max-width: 35px;
+    max-height: 35px;
+    margin-top: 7px;
+}
+.home {
+    min-height:100vh;
+    display: flex;
+    background: url(img/D2.png);
+    background-size: cover;
+
+}
+
+.home .content h1 {
+    font-size: 70px;
+    line-height: 1;
+    color: #fff;
+    padding-top: 220px;
+    word-spacing: 2px;
+    text-align: left;
+    padding-left: 45px;
+
+}
+
+
+.slider {
+    width: 400px; /* Adjust the width as needed */
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 400px;
+    height: 250px;
+    margin: 12px;
+    margin-top: 160px;
+    border-radius: 20px;
+    box-sizing: content-box;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+}
+
+.radio-buttons input[type="radio"] {
+    appearance: none;
+    width: 15px; 
+    height: 15px; 
+    border: 2px solid #fff; 
+    border-radius: 50%; 
+    margin: 0 5px; 
+    cursor: pointer;
+}
+
+.radio-buttons input[type="radio"]:checked {
+    background-color: #fff; /* Change the background color when selected */
+}
+
+/* Create a container to hold the left and right boxes */
+.container {
+    display: flex;
+    height: 100vh;
+    background: url(img/D3.png);
+}
+
+.left-box img {
+    width: 270px;
+    height: 270px;
+    margin-top: 160px;
+    margin-left: 100px;
+}
+
+/* Style the right box */
+.right-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the button rows */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style the buttons */
+button {
+    width: 200px; 
+    height: 60px;
+    padding: 15px 0; /* Adjust vertical padding if needed */
+    background-color: #090749;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px;
+    font-size: 15px;
+    text-align: center; /* Center the button text horizontally */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis for long text */
+    backdrop-filter: blur (5px);
+}
+
+button:hover {
+    background-color: #279EFF;
+}
+
+footer {
+    text-align: center; 
+    margin-top: auto;
+    background-color: #081b29; 
+    color: #fff; 
+    padding: 20px;
+    font-size: 15px;
+    
+}
+/* Styles for the scroll down message */
+.scroll-down {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 1; /* Initially visible */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-down.hidden {
+    opacity: 0; /* Hidden when scrolled back to the top */
+}
+
