@@ -1,0 +1,70 @@
+/* Reset some default styles */
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background image for the body */
+body {
+    background-image: url(img/SMI-bg.png); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Style the logo */
+.logo img{
+    max-width: 350px;
+    max-height: 250px;
+}
+/* CSS for image buttons */
+.image-button {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+    margin-top: 180px;
+    
+}
+
+/* Define background images for each button */
+#button1 {
+    background-image: url(img/Conference-Calendar.png);
+}
+#button2 {
+    background-image: url(img/Conference-Form.png); 
+}
+
+#button3 {
+    background-image: url(img/Escalation-Management.png); 
+}
+/* Style for the central logo */
+.central-logo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px; /* Adjust the width of the central logo */
+    height: auto; /* Adjust the height of the central logo */
+    margin-top: 40px;
+}
+.note {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    color: aliceblue;
+}
