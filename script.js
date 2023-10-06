@@ -45,3 +45,6 @@ function handleScroll() {
 // Attach the scroll event listener
 window.addEventListener('scroll', handleScroll);
 
+document.getElementById('back-button').addEventListener('click', function() {
+    window.history.back(); // Go back to the previous page
+});
