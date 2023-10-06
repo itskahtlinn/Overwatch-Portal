@@ -69,7 +69,7 @@ body::before {
     transform: translate(-50%, -50%);
     width: 155px; /* Adjust the width of the central logo */
     height: auto; /* Adjust the height of the central logo */
-    margin-top: 35px;
+    margin-top: 20px;
 }
 .note {
     position: absolute;
