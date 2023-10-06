@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color:#081b29;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    background: url(img/D3.png);
+}
+
+.left-box img {
+    width: 300px;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
+/* Style the right box */
+.right-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the button rows */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style the buttons */
+button {
+    width: 200px; 
+    height: 80px;
+    padding: 15px 0; /* Adjust vertical padding if needed */
+    background-color: #090749;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px;
+    font-size: 15px;
+    text-align: center; /* Center the button text horizontally */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis for long text */
+    backdrop-filter: blur (5px);
+}
+
+button:hover {
+    background-color: #279EFF;
+}
+
+footer {
+    text-align: center; 
+    margin-top: auto;
+    background-color: #081b29; 
+    color: #fff; 
+    padding: 20px;
+    font-size: 15px;
+    
+}
