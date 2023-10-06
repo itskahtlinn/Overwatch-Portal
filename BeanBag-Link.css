@@ -48,7 +48,7 @@ button {
     cursor: pointer;
     margin: 15px;
     font-size: 15px;
-    text-align: center; /* Center the button text horizontally */
+    text-align: center; 
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide any overflowing text */
     text-overflow: ellipsis; /* Show ellipsis for long text */
