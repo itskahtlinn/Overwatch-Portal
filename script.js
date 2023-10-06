@@ -23,35 +23,25 @@ setInterval(nextSlide, 2500);
 
 let lastScrollTop = 0;
 
-function handleScroll() {
-    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const scrollDownText = document.querySelector('.scroll-down-text');
-
-    if (currentScrollTop > lastScrollTop) {
-        // Scrolling down, hide the text by moving it off the screen
-        scrollDownText.style.transform = 'translateY(100%)';
-    } else {
-        // Scrolling up, show the text by resetting its transform
-        scrollDownText.style.transform = 'translateY(0)';
-    }
-
-    lastScrollTop = currentScrollTop;
+// Function to show the "Scroll down" element
+function showScrollDown() {
+    document.getElementById('scroll-down').style.display = 'block';
 }
 
-const scrollDownElement = document.getElementById('scroll-down');
-let isScrollingUp = false;
+// Function to hide the "Scroll down" element
+function hideScrollDown() {
+    document.getElementById('scroll-down').style.display = 'none';
+}
 
-window.addEventListener('scroll', () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// Function to handle scroll events
+function handleScroll() {
+    if (window.scrollY > 0) {
+        hideScrollDown();
+    } else {
+        showScrollDown();
+    }
+}
 
-    if (scrollTop > 0 && !isScrollingUp) {
-        // Scrolling down
-        scrollDownElement.classList.add('hidden');
-        isScrollingUp = true;
-    } else if (scrollTop === 0 && isScrollingUp) {
-        // Scrolling back to the top
-        scrollDownElement.classList.remove('hidden');
-        isScrollingUp = false;
-    }  
-});
+// Attach the scroll event listener
+window.addEventListener('scroll', handleScroll);
 
