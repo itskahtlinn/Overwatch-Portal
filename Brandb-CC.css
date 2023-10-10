@@ -6,7 +6,7 @@ body, p {
 
 /* Set a background image for the body */
 body {
-    background-image: url(img/SMIbackg.png); /* Replace 'background.jpg' with your image path */
+    background-image: url(img/bg9.png); /* Replace 'background.jpg' with your image path */
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@ body {
 
 body::before {
     content: "";
-    background-image: url(img/SMIbackg.png); /* Same as the body background image */
+    background-image: url(img/bg9.png); /* Same as the body background image */
     background-size: cover;
     background-position: center;
     filter: blur(2px); /* Adjust the blur intensity as needed */
