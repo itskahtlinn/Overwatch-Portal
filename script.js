@@ -1,3 +1,4 @@
+
 const slider = document.querySelector('.slider-wrapper');
 const radioButtons = document.querySelectorAll('.radio-buttons input');
 let slideIndex = 0;
