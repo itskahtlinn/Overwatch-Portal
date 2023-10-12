@@ -48,3 +48,8 @@ window.addEventListener('scroll', handleScroll);
 document.getElementById('back-button').addEventListener('click', function() {
     window.history.back(); // Go back to the previous page
 });
+
+
+// Add a class to the h1 element to trigger the animation
+const h1Element = document.querySelector('.animated-text');
+h1Element.classList.add('active');
