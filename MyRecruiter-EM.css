@@ -18,6 +18,19 @@ body {
     position: relative;
 }
 
+body::before {
+    content: "";
+    background-image: url(img/MRbg.png); /* Same as the body background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); /* Adjust the blur intensity as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the blur layer behind the content */
+}
 
 /* Style the logo */
 .logo img{
