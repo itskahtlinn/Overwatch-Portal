@@ -11,8 +11,8 @@ function nextSlide() {
 }
 
 function updateSlider() {
-    const slideWidth = slider.offsetWidth; // Get the width of the slider container
-    const translateX = -slideIndex * slideWidth; // Adjust for image width
+    const slideWidth = slider.offsetWidth; 
+    const translateX = -slideIndex * slideWidth; 
     slider.style.transform = `translateX(${translateX}px)`;
     radioButtons.forEach((radio, index) => {
         radio.checked = index === slideIndex;
@@ -23,17 +23,14 @@ setInterval(nextSlide, 2500);
 
 let lastScrollTop = 0;
 
-// Function to show the "Scroll down" element
 function showScrollDown() {
     document.getElementById('scroll-down').style.display = 'block';
 }
 
-// Function to hide the "Scroll down" element
 function hideScrollDown() {
     document.getElementById('scroll-down').style.display = 'none';
 }
 
-// Function to handle scroll events
 function handleScroll() {
     if (window.scrollY > 0) {
         hideScrollDown();
@@ -42,7 +39,6 @@ function handleScroll() {
     }
 }
 
-// Attach the scroll event listener
 window.addEventListener('scroll', handleScroll);
 
 document.getElementById('back-button').addEventListener('click', function() {
@@ -50,6 +46,7 @@ document.getElementById('back-button').addEventListener('click', function() {
 });
 
 
-// Add a class to the h1 element to trigger the animation
-const h1Element = document.querySelector('.animated-text');
-h1Element.classList.add('active');
+document.addEventListener("DOMContentLoaded", function() {
+    
+});
+
