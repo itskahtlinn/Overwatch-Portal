@@ -20,7 +20,7 @@ body {
 
 body::before {
     content: "";
-    background-image: url(img/SMIbackg.png); /* Same as the body background image */
+    background-image: url(img/MF-bgg.png); /* Same as the body background image */
     background-size: cover;
     background-position: center;
     filter: blur(2px); /* Adjust the blur intensity as needed */
