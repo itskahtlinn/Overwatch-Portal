@@ -167,6 +167,7 @@ footer {
     color: #fff; 
     padding: 20px;
     font-size: 15px;
+    text-decoration: none;
     
 }
 #scroll-down {
@@ -181,4 +182,21 @@ footer {
     cursor: pointer;
 }
 
+/* Add these CSS rules for image animation */
+.slider img {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
 
+.slider img.enlarged {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+
+/* Make scroll-down button responsive */
+@media (max-width: 768px) {
+    #scroll-down {
+        display: block; /* Show the element */
+        padding: 5px 10px; /* Adjust padding */
+    }
+}
