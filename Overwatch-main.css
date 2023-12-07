@@ -285,10 +285,11 @@ footer {
     }
 
     .container {
-        flex-direction: row; /* Revert to row layout for larger screens */
+        flex-direction: column; /* Revert to row layout for larger screens */
         height: 100vh;
         align-items: center;
-        justify-content: c;
+        justify-content: center;
+        margin-left: 20px;
     }
 
     
