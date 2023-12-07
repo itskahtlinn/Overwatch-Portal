@@ -19,7 +19,8 @@ body {
 }
 
 wrapper-main {
-    width: 11;
+    width: 1100px;
+    margin: auto;
 }
 
 header {
@@ -120,9 +121,9 @@ header {
 }
 
 .left-box img {
-    width: 270px;
-    height: 270px;
-    margin-top: 160px;
+    width: 250px;
+    height: 250px;
+    margin-top: 120px;
     margin-left: 100px;
 }
 
@@ -133,6 +134,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 600px;
 }
 
 /* Style the button rows */
@@ -143,8 +145,8 @@ header {
 
 /* Style the buttons */
 button {
-    width: 200px; 
-    height: 60px;
+    width: 250px; 
+    height: 65px;
     padding: 15px 0; /* Adjust vertical padding if needed */
     background-color: #090749;
     color: #fff;
@@ -204,10 +206,10 @@ footer {
 }
 
 /* Adjustments for mobile phones */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     header {
-        padding: 10px 5%; /* Adjust padding for better spacing on smaller screens */
+        padding: 8px 5%; /* Adjust padding for better spacing on smaller screens */
     }
 
     .logo {
@@ -224,18 +226,17 @@ footer {
         order: 2; /* Change the order of content to 2 */
         text-align: center; /* Center text on smaller screens */
         padding: 80px 30px 30px;
-        font-size: 30px !important;
+        font-size: 50px !important;
         z-index: 2;
         position: relative;
-        margin-top: 30px;
+        margin-top: 250px;
     }
 
     .slider {
         order: 3; /* Change the order of the slider to 3 */
         width: 100%; /* Make the slider full-width for smaller screens */
-        margin: 0; /* Remove margin for smaller screens */
-        margin-top: 20px; /* Adjust margin-top for smaller screens */
         overflow: hidden;
+        margin-top: 70px;
     }
     
     .slider-wrapper {
@@ -262,7 +263,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
+        margin-top: 80px;
     }
 
     .radio-buttons input[type="radio"] {
@@ -286,8 +287,9 @@ footer {
 
     .container {
         flex-direction: column; /* Revert to row layout for larger screens */
-        height: auto;
+        height: 100vh;
         margin-left: 0;
+        background-size:cover ;
     }  
 
     .left-box {
@@ -297,11 +299,11 @@ footer {
     }
     
     .left-box img {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         text-align: center;
-        margin-top: 20px;
         margin-left: 5px;
+        margin-bottom: 50px;
 
     }
     
