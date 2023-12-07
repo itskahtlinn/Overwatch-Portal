@@ -18,6 +18,10 @@ body {
     border: var(--main-color);
 }
 
+wrapper-main {
+    width: 11;
+}
+
 header {
     background: var(--main-color);
     border-bottom: #fff 2.5px solid;
@@ -182,21 +186,132 @@ footer {
     cursor: pointer;
 }
 
-/* Add these CSS rules for image animation */
 .slider img {
     transition: transform 0.3s;
     cursor: pointer;
 }
 
 .slider img.enlarged {
-    transform: scale(1.2); /* Adjust the scale factor as needed */
+    transform: scale(1.2); 
 }
 
 
-/* Make scroll-down button responsive */
 @media (max-width: 768px) {
     #scroll-down {
-        display: block; /* Show the element */
-        padding: 5px 10px; /* Adjust padding */
+        display: block; 
+        padding: 5px 10px; 
+}
+}
+
+/* Adjustments for mobile phones */
+@media (max-width: 480px) {
+
+    header {
+        padding: 10px 5%; /* Adjust padding for better spacing on smaller screens */
+    }
+
+    .logo {
+        font-size: 1.2em; /* Adjust font size for better readability on smaller screens */
+    }
+
+    .home {
+        flex-direction: column; /* Stack the items vertically on smaller screens */
+        align-items: center; /* Center the items on smaller screens */
+       
+    }
+
+    .home .content h1 {
+        order: 2; /* Change the order of content to 2 */
+        text-align: center; /* Center text on smaller screens */
+        padding: 80px 30px 30px;
+        font-size: 30px !important;
+        z-index: 2;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .slider {
+        order: 3; /* Change the order of the slider to 3 */
+        width: 100%; /* Make the slider full-width for smaller screens */
+        margin: 0; /* Remove margin for smaller screens */
+        margin-top: 20px; /* Adjust margin-top for smaller screens */
+        overflow: hidden;
+    }
+    
+    .slider-wrapper {
+        display: flex;
+        flex-wrap: nowrap; /* Ensure images are not wrapping to the next line */
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider-item {
+        width: 100%; /* Each image takes up the full width of the slider */
+        margin-right: 20px; /* Add margin between images */
+    }
+
+
+    .slider img {
+        width: 100%; /* Make images fill the container */
+        margin-top: 20px; /* Adjust margin for smaller screens */
+        border-radius: 5px; /* Adjust border radius for smaller screens */
+        transition: transform 0.3s;
+        height: auto;
+    }
+    
+    .radio-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .radio-buttons input[type="radio"] {
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .radio-buttons input[type="radio"]:checked {
+        background-color: #fff; /* Change the background color when selected */
+    }
+
+
+    #scroll-down {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .container {
+        flex-direction: row; /* Revert to row layout for larger screens */
+        height: 100vh;
+        align-items: center;
+        justify-content: c;
+    }
+
+    
+    .left-box {
+        margin-top: 0; /* Reset margin for larger screens */
+        
+    }
+
+    .left-box img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .right-box {
+        margin-top: 0; /* Reset margin for larger screens */
+    }
+
+    .button-row {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center;
+    }
+
+    button {
+        max-width: 90%; /* Adjust max-width for smaller screens */
     }
 }
