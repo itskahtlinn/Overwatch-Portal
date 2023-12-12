@@ -67,8 +67,8 @@ body::before {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 155px; /* Adjust the width of the central logo */
-    height: auto; /* Adjust the height of the central logo */
+    width: 155px; 
+    height: auto; 
     margin-top: 35px;
 }
 .note {
@@ -85,15 +85,15 @@ body::before {
 /* Style for the Back button */
 #back-button {
     position: fixed;
-    top: 10px; /* Adjust the distance from the top */
-    right: 10px; /* Adjust the distance from the right */
-    padding: 10px 20px; /* Add padding for better visibility */
-    background-color: #0074e4; /* Button background color */
-    color: #fff; /* Button text color */
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px; 
+    background-color: #0074e4; 
+    color: #fff; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1; /* Ensure the button is above other content */
+    z-index: 1; 
 }
 
 /* Style for the Back button on hover (optional) */

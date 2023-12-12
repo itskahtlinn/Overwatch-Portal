@@ -56,10 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     images.forEach(function (image) {
         image.addEventListener('click', function () {
-            // Toggle the 'enlarged' class on the clicked image
             image.classList.toggle('enlarged');
-
-            // Remove the 'enlarged' class from other images
+            
             images.forEach(function (img) {
                 if (img !== image) {
                     img.classList.remove('enlarged');

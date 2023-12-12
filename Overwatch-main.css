@@ -18,10 +18,6 @@ body {
     border: var(--main-color);
 }
 
-wrapper-main {
-    width: 1100px;
-    margin: auto;
-}
 
 header {
     background: var(--main-color);
@@ -134,7 +130,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 600px;
+    margin-bottom: 90px;
 }
 
 /* Style the button rows */
@@ -143,11 +139,10 @@ header {
     justify-content: space-between;
 }
 
-/* Style the buttons */
 button {
-    width: 250px; 
-    height: 65px;
-    padding: 15px 0; /* Adjust vertical padding if needed */
+    width: 200px; 
+    height: 70px;
+    padding: 15px 0; 
     background-color: #090749;
     color: #fff;
     border: 2px solid #fff;
@@ -155,12 +150,13 @@ button {
     cursor: pointer;
     margin: 15px;
     font-size: 15px;
-    text-align: center; /* Center the button text horizontally */
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide any overflowing text */
-    text-overflow: ellipsis; /* Show ellipsis for long text */
+    text-align: center; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
     backdrop-filter: blur (5px);
 }
+
 
 button:hover {
     background-color: #279EFF;
@@ -188,22 +184,7 @@ footer {
     cursor: pointer;
 }
 
-.slider img {
-    transition: transform 0.3s;
-    cursor: pointer;
-}
 
-.slider img.enlarged {
-    transform: scale(1.2); 
-}
-
-
-@media (max-width: 768px) {
-    #scroll-down {
-        display: block; 
-        padding: 5px 10px; 
-}
-}
 
 /* Adjustments for mobile phones */
 @media (max-width: 600px) {
